@@ -22,6 +22,7 @@ import { AnimatedCounter } from "@/components/dashboard/AnimatedCounter";
 import { motion } from "framer-motion";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { cn } from "@/lib/utils";
+import { PageTourButton } from "@/components/dashboard/tour/PageTourButton";
 
 /* ─── Colour maps ────────────────────────────────────────────── */
 const statusColors: Record<string, string> = {
