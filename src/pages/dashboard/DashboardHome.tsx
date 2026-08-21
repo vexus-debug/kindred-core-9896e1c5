@@ -161,7 +161,7 @@ export default function DashboardHome() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.35 }}
       >
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 py-1">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 py-1" data-tour="page-header">
           <div>
             <div className="flex items-center gap-2 mb-0.5">
               <div className="h-8 w-8 rounded-xl bg-gradient-to-br from-primary to-dental-teal-light flex items-center justify-center shadow-md shadow-primary/20">
@@ -177,7 +177,8 @@ export default function DashboardHome() {
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap gap-2 shrink-0" data-tour="dashboard-quick-actions">
+          <div className="flex flex-wrap items-center gap-2 shrink-0" data-tour="dashboard-quick-actions">
+            <PageTourButton />
             {quickActions.map((action: any) => (
               <Button key={action.to} size="sm" variant="outline" className="gap-1.5 rounded-lg text-xs border-border hover:border-primary/40 hover:bg-primary/5 transition-all" asChild>
                 <Link to={action.to}>
